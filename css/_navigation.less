@@ -1,0 +1,74 @@
+/* ---------- Navigation ---------- */
+nav#primary {
+    font-family: Helvetica, Arial, sans serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 650px) {
+    #logo {
+        float: left;
+    }
+
+    nav#primary {
+        float: right;
+        padding-top: 40px;
+    }
+}
+
+nav#primary ul {
+    list-style:none; /* remove bullets */
+    float: right;
+    margin-top: 0.4em;
+}
+
+nav#primary li {
+    display:inline; /*put all the items on single horizontal line */
+    margin-right: 1em;
+}
+
+nav#primary li:last-child {
+    margin-right: 0;
+}
+
+nav#primary a {
+    color: rgb(221,90,38);
+    text-decoration: none;
+}
+
+nav#primary a:hover {
+    text-decoration: underline;
+}
+
+nav#primary a.selected {
+    color:rgb(55,55,55);
+}
+
+
+#side-nav {
+    font-family: Arial, Helvetica, Sans Serif;
+    font-size: 30px;
+    color: rgb(221,90,38);
+    margin-bottom: 35px;
+    padding-top:10px;
+    border-top: rgb(55,55,55) solid 1px;
+    clear:both;
+    list-style:none;
+}
+
+#side-nav li { /*applies to both PREV and NEXT */
+    float:left;
+}
+
+#side-nav li.next { /* overrides for NEXT only */
+    float:right;
+    text-align:right;
+}
+
+#side-nav li.next a {
+    padding: 0 0 0 1em;
+}
+
+#side-nav li.prev a {
+    padding: 0 1em 0 0;
+}

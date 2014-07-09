@@ -1,0 +1,41 @@
+/* ---- columns mixins ----- */
+.single-col {
+    width: 100%;
+    margin: 20px 0 2em 0;
+
+    @media screen and (min-width: 600px) {
+        width: 32.2%;
+        float: left;
+        margin: 20px 1.7% 2em 0;
+    }
+}
+
+.double-col {
+    width: 100%;
+    margin: 20px 0 0 0;
+    @media screen and (min-width: 600px) {
+        width: 66%;
+        margin-right: 0px;
+        float: left;
+    }
+}
+
+/* -------- columns ------- */
+
+#left-col,
+#middle-col,
+#right-col {
+    .single-col;
+}
+
+#right-col {
+    margin-right: 0;
+}
+
+#middle-col,
+#right-col {
+    @media screen and (min-width: 800px) {
+        float: left;
+        width: 32.2%;
+    }
+}

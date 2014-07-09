@@ -1,0 +1,110 @@
+#intro {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: black solid 1px;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: rgb(90,90,90);
+    text-align: center;
+
+    @media screen and (min-width: 330px) {
+        text-align: left;
+    }
+}
+
+.column {
+    display: block;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 310px;
+}
+
+.column-single-loading {
+    max-width: 100%;
+}
+
+.project-thumbs .column-single-loading .project-thumb {
+    width: 310px;
+    height: 190px;
+    border: 1px solid #ddd;
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.column-single {
+    float: none;
+    margin: 20px auto;
+}
+
+
+/* ---------- Project thumbs ---------- */
+.project-thumbs {
+    overflow: visible;
+}
+
+.project-thumbs .project-thumb {
+    display:block;
+    margin-bottom:5%;
+    position:relative;
+    width: 100%;
+}
+
+.project-thumbs img {
+    display:block;
+}
+
+/* ---------- Caption Overlays ---------- */
+
+.project-caption {
+    -webkit-transition:  opacity .8s ease;
+       -moz-transition:  opacity .8s ease;
+         -o-transition:  opacity .8s ease;
+            transition:  opacity .8s ease;
+    text-align:left;
+    opacity:0;  /* hidden! */
+    background:rgba(221,90,39,.85); /* orange */
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    }
+
+/* Caption content is positioned 10px from bottom of project-caption div */
+
+.caption-content {
+    position:absolute;
+    bottom:10px;
+    width:90%;
+    padding-left:5%;
+    padding-right:5%;
+    }
+
+.caption-content h2, .caption-content h3 {
+    color:black;
+    font-style:italic;
+    font-size:14px;
+    line-height:15px;
+     }
+.caption-content h2 {
+     font-weight:bold;
+     border-bottom:1px solid black;
+     padding-bottom:8px;
+     }
+.caption-content h3 {
+     font-weight:normal;
+     padding-top:7px;
+     }
+
+/* Show caption div when user hovers over parent link (<a> tag) */
+
+a:hover .project-caption {
+    opacity:1;
+    }
+
+
