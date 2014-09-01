@@ -16,7 +16,7 @@ This is the result
 
 ### Technologies Used ###
 
-To keep the implementation as simpler as possible for non-tech hands I choose PHP to quickly turn static web pages into partials; this allowed me to minimize repetitions using templates and generator functions for the repeating elements (like the thumbnails).
+To keep the implementation as simpler as possible for non-tech hands I chose PHP to quickly turn static web pages into partials; this allowed me to minimize repetitions using templates and generator functions for the repeating elements (like the thumbnails).
 
 ### Responsive columns ###
 
